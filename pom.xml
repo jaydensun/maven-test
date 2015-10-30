@@ -6,7 +6,13 @@
 
     <groupId>com.jayden</groupId>
     <artifactId>maven-test</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <version>${project.version}</version>
+    <modules>
+        <module>test-war</module>
+        <module>test-one</module>
+        <module>test-two</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -15,5 +21,9 @@
             <version>1.0.13</version>
         </dependency>
     </dependencies>
+    <properties>
+        <project.version>1.0-SNAPSHOT</project.version>
+    </properties>
+
 
 </project>
